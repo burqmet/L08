@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | OTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>Authentication</h1>
+            </div>
+            <div class="form-heading">
+                <h2>ยืนยันรหัส OTP</h2>
+                <p>กรุณากรอกรหัส OTP 6 หลักที่ส่งไปยังอีเมลของคุณ</p>
+            </div>
+            <form id="otpForm">
+                <div class="input-group">
+                    <h5>รหัส OTP</h5>
+                    <input
+                        type="text"
+                        id="otp"
+                        placeholder="กรอกรหัส OTP 6 หลัก"
+                        maxlength="6"
+                        inputmode="numeric"
+                        required
+                    >
+                    <p id="emailDisplay" class="email-display"></p>
+                </div>
+                <p id="otpMessage" class="error-message"></p>
+                <button type="submit" class="primary-button">
+                    ยืนยันรหัส OTP
+                </button>
+            </form>
+            <div class="footer">© 2026 Authentication Lab</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

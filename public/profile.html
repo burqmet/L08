@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>Authentication</h1>
+            </div>
+            <div class="form-heading profile-heading">
+                <h2>ยินดีต้อนรับ</h2>
+                <p>ยืนยันตัวตนสำเร็จ</p>
+            </div>
+            <div class="profile-info">
+                <span id="profileUsername" hidden></span>
+                <h4>ข้อมูลบัญชีผู้ใช้งาน</h4>
+                <div class="profile-detail">
+                    <span>ชื่อผู้ใช้</span>
+                    <strong id="usernameValue"></strong>
+                </div>
+                <div class="profile-detail">
+                    <span>การยืนยันตัวตน</span>
+                    <strong>OTP Verified</strong>
+                </div>
+                <div class="profile-detail">
+                    <span>สถานะบัญชี</span>
+                    <strong class="status-active">ใช้งานอยู่</strong>
+                </div>
+            </div>
+            <button id="logoutButton" class="primary-button logout-button">
+                ออกจากระบบ
+            </button>
+            <div class="footer">
+                © 2026 Authentication Lab
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
